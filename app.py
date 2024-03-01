@@ -41,10 +41,12 @@ with gr.Blocks() as demo:
         More information here: https://huggingface.co/h94/IP-Adapter-FaceID
         """
         )
+    with gr.Row():
         gr.Markdown("""
                     This simple demo is way more efficient if is run in a GPU environment where it can run in a few seconds.
                     In a CPU environment it can take a many minutes to run.
                     """)
+    with gr.Row():    
         gr.Markdown(
         """
         Buy me a coffee: https://www.buymeacoffee.com/nuno.tome            
