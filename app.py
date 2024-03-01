@@ -33,8 +33,8 @@ with gr.Blocks() as demo:
     Buy me a coffee: https://www.buymeacoffee.com/nuno.tome            
     """
     )
-    gr.Image("/image/bmc.gif")
-                
+    # gr.Image("/image/bmc.gif")
+    gr.Image("./image/bmc.gif")
             
 
 if __name__ == "__main__":
