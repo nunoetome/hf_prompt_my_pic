@@ -8,3 +8,13 @@ from insightface.utils import face_align
 import gradio as gr
 from huggingface_hub import hf_hub_download
 from datetime import datetime
+
+
+
+def greet(name):
+    return "Hello " + name + "!"
+
+demo = gr.Interface(fn=greet, inputs="text", outputs="text")
+
+
+demo.launch()
