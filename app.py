@@ -29,11 +29,13 @@ with gr.Blocks() as demo:
                 In a CPU environment it can take a many minutes to run.
                 """)
     gr.Markdown(
-    """"
+    """
     Buy me a coffee: https://www.buymeacoffee.com/nuno.tome            
     """
     )
- 
+    gr.Image("bmc-button.webp")
+                
+            
 
 if __name__ == "__main__":
     demo.launch()
