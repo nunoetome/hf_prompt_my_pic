@@ -33,9 +33,32 @@ with gr.Blocks() as demo:
     Buy me a coffee: https://www.buymeacoffee.com/nuno.tome            
     """
     )
-    # gr.Image("/image/bmc.gif")
-    gr.Image("./image/bmc.gif")
-            
+    with gr.Row():
+        gr.Markdown(
+        """
+        # Prompt My Pic
+        This demo uses the IP Adapter FaceID to generate a new image from a prompt.
+        More information here: https://huggingface.co/h94/IP-Adapter-FaceID
+        """
+        )
+        gr.Markdown("""
+                    This simple demo is way more efficient if is run in a GPU environment where it can run in a few seconds.
+                    In a CPU environment it can take a many minutes to run.
+                    """)
+        gr.Markdown(
+        """
+        Buy me a coffee: https://www.buymeacoffee.com/nuno.tome            
+        """
+        )
+    with gr.Row():
+        with gr.Column():
+            gr.Markdown("input: ")
+        with gr.Column():
+            gr.Markdown("output: ")
+    with gr.Row():
+        gr.Markdown("optiosn: ")
+    with gr.Row():
+        gr.Markdown("exemples: ")    
 
 if __name__ == "__main__":
     demo.launch()
