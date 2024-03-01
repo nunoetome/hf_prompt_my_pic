@@ -38,8 +38,16 @@ with gr.Blocks() as demo:
         )
     with gr.Row():
         with gr.Column():
-            gr.Markdown("input: ")
+            demo_inputs = []
+            demo_inputs.append(gr.Textbox(label='text prompt', value='Linkedin profile picture'))
+            demo_inputs.append(gr.Image(type='filepath', label='image prompt'))
+            with gr.Accordion(label='Advanced options', open=False):
+                demo_inputs.append(gr.Textbox(label='negative text prompt', value="monochrome, lowres, bad anatomy, worst quality, low quality, blurry"))
+                demo_inputs.append(gr.Slider(maximum=1, minimum=0, value=0.5, step=0.05, label='image prompt scale'))
+            btn = gr.Button("Generate")
+            
         with gr.Column():
+            demo_outputs = []
             gr.Markdown("output: ")
     with gr.Row():
         gr.Markdown("optiosn: ")
