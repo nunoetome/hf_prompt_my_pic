@@ -1,6 +1,6 @@
 ---
 title: Prompt My Pic
-emoji: 🐢
+emoji: 👨‍🦰
 colorFrom: green
 colorTo: indigo
 sdk: gradio
