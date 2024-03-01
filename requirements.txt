@@ -1,0 +1,8 @@
+insightface
+onnxruntime
+diffusers==0.22.1
+einops
+accelerate
+gradio
+transformers
+git+https://github.com/ironbar/IP-Adapter.git@add-cpu-support
