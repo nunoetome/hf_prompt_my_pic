@@ -33,7 +33,7 @@ with gr.Blocks() as demo:
     Buy me a coffee: https://www.buymeacoffee.com/nuno.tome            
     """
     )
-    gr.Image("bmc-button.webp")
+    gr.Image("/image/bmc.gif")
                 
             
 
